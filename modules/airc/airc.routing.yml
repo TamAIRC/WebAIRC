@@ -1,0 +1,33 @@
+airc.index:
+  path: '/index'
+  defaults:
+    _controller: '\Drupal\airc\Controller\AircController::index'
+    _title: 'Trang chủ'
+  requirements:
+    _permission: 'access content'
+
+
+# airc.content:
+#   path: '/content'
+#   defaults:
+#     _controller: '\Drupal\airc\Controller\AircController::content'
+#     _title: 'Trang chủ'
+#   requirements:
+#     _permission: 'access content'
+
+# airc.contrast:
+#   path: '/contrast'
+#   defaults:
+#     _controller: '\Drupal\airc\Controller\AircController::contrast'
+#     _title: 'Trang chủ'
+#   requirements:
+#     _permission: 'access content'
+
+# airc.organizational:
+#   path: '/organizational'
+#   defaults:
+#     _controller: '\Drupal\airc\Controller\AircController::organizational'
+#     _title: 'Trang chủ'
+#   requirements:
+#     _permission: 'access content'
+

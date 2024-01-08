@@ -1,0 +1,8 @@
+name: Hello Word
+type: module
+description: "Module test."
+core_version_requirement: ^8.8 || ^9 || ^10
+
+
+version: '8.x-1.0'
+project: 'demo'
