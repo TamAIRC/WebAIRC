@@ -1,7 +1,0 @@
-name: AIRC-WEB
-type: module
-description: "Airc-Web"
-core_version_requirement: ^8.8 || ^9 || ^10
-
-version: '8.x-1.0'
-
