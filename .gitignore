@@ -1,3 +1,11 @@
-/vendor
 /.idea
 /.vscode
+core/**/*
+vendor/**/*
+sites/**/files/**/*
+libraries/**/*
+sites/**/libraries/**/*
+profiles/**/libraries/**/*
+**/js_test_files/**/*
+**/node_modules/**/*
+modules/contrib
