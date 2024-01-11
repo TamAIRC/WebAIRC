@@ -1,0 +1,7 @@
+hello_module.wellcome:
+  path: '/view'
+  defaults:
+    _controller: '\Drupal\hello_module\Controller\WellcomeController::wellcome'
+    _title: 'Trang chủ'
+  requirements:
+    _permission: 'access content'
