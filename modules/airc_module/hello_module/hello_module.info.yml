@@ -1,0 +1,10 @@
+name: Hello module
+type: module
+description: "Airc-Web"
+core_version_requirement: ^9 || ^10
+
+version: '9.x-1.0'
+
+# libraries:
+#   - hello_module/bootstrap
+#   - hello_module/global-styling
