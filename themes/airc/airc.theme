@@ -1,0 +1,28 @@
+<?php
+
+use Drupal\Core\Render\Element;
+
+/**
+ * Implements hook_preprocess().
+ */
+function airc_preprocess(&$variables, $hook)
+{
+  // Get the current theme.
+  $request = \Drupal::request();
+  $request_schema = $request->getSchemeAndHttpHost();
+  $base_path = $request->getBasePath();
+  $variables['base_path'] = $request_schema . $base_path;
+}
+/**
+ * Implements hook_preprocess_HOOK() for block templates.
+ */
+function airc_preprocess_block(&$variables)
+{
+  if ($variables['base_plugin_id'] == 'language_block') {
+    // Extract the languages variable from the block content.
+    $content = $variables['elements']['content'];
+    if (isset($content['#links']) && is_array($content['#links'])) {
+      $variables['languages'] = $content['#links'];
+    }
+  }
+}
