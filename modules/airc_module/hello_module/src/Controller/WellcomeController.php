@@ -17,14 +17,16 @@ class WellcomeController extends ControllerBase {
       ],
     ];
   }
-    // $content = "xin chào mọi người";
-    // return [
-    //   'theme' => 'wellcome_airc',
-    //   '#content' => $content,
-    //   '#attached' => [
-    //     'library' => [
-    //       'airc/wellcome-airc'
-    //     ]
-    //   ]
-    // ];
+  public function detail() {
+
+    return [
+      '#theme' => 'detail',
+      '#attached' => [
+        'library' => [
+          'hello_module/hello_module',
+        ],
+      ],
+    ];
+  }
+
 }
