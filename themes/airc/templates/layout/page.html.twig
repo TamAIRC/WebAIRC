@@ -59,12 +59,14 @@ set footer_classes = ' ' ~
 <header id="header" class="header container-fluid" role="banner">
 	{{ page.header}}
 	{% if  page.nav_additional %}
-		<nav class="{{ nav_classes }} navbar-additional">
-			{{ page.nav_additional }}
-		</nav>
+		<div class="navbar-additional-wrap">
+			<nav class="{{ nav_classes }} navbar-additional">
+				{{ page.nav_additional }}
+			</nav>
+		</div>
 	{% endif %}
 	{% if page.nav_branding or page.nav_main %}
-		<div class="{{ b5_top_container }} nav-menu-wrap">
+		<div class="{{ b5_top_container }} navbar-menu-wrap">
 			<nav class="{{ nav_classes }}">
 				{{ page.nav_branding }}
 				{% if page.nav_main %}
