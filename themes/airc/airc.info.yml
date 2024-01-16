@@ -12,10 +12,11 @@ libraries:
   - bootstrap5/global-styling
 
 regions:
-  header_top: 'Header top'
   header: Header
+  nav_additional: 'Additional navigation region (eg search form, social icons, etc)'
+  nav_branding: 'Navigation branding region'
+  nav_main: 'Main navigation region'
   breadcrumb: Breadcrumbs
-  menu: menu
   content: 'Main content'
   sidebar: Sidebar
   sidebar_first: 'Sidebar first'

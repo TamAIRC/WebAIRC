@@ -1,7 +1,7 @@
 .airc-menu.menu--account .nav {
   display: flex;
   flex-direction: row;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .menu-language {
@@ -20,8 +20,13 @@
 .menu-language_item:last-child {
   margin-right: 0;
 }
-.region-header-top{
-  display: flex;
+.navbar-additional{
   justify-content: flex-end;
+}
+.region-nav-additional{
+  display: flex;
   align-items: center;
+}
+.nav-menu-wrap{
+background-color: ;
 }

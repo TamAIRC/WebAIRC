@@ -43,14 +43,44 @@
  * @see html.html.twig
  */
 #}
-<header id="header" class="header" role="banner">
-	<div class="container-fluid">
-		{{ page.header_top }}
-		{{ page.header}}
-	</div>
+{%
+set nav_classes = 'navbar navbar-expand-lg' ~
+  (b5_navbar_schema != 'none' ? " navbar-#{b5_navbar_schema}" : ' ') ~
+  (b5_navbar_schema != 'none' ? (b5_navbar_schema == 'dark' ? ' text-light' : ' text-dark' ) : ' ') ~
+  (b5_navbar_bg_schema != 'none' ? " bg-#{b5_navbar_bg_schema}" : ' ')
+%}
+
+{%
+set footer_classes = ' ' ~
+  (b5_footer_schema != 'none' ? " footer-#{b5_footer_schema}" : ' ') ~
+  (b5_footer_schema != 'none' ? (b5_footer_schema == 'dark' ? ' text-light' : ' text-dark' ) : ' ') ~
+  (b5_footer_bg_schema != 'none' ? " bg-#{b5_footer_bg_schema}" : ' ')
+%}
+<header id="header" class="header container-fluid" role="banner">
+	{{ page.header}}
+	{% if  page.nav_additional %}
+		<nav class="{{ nav_classes }} navbar-additional">
+			{{ page.nav_additional }}
+		</nav>
+	{% endif %}
+	{% if page.nav_branding or page.nav_main %}
+		<div class="{{ b5_top_container }} nav-menu-wrap">
+			<nav class="{{ nav_classes }}">
+				{{ page.nav_branding }}
+				{% if page.nav_main %}
+					<button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse justify-content-md-end" id="navbarMain">
+						{{ page.nav_main }}
+					</div>
+				{% endif %}
+			</nav>
+		</div>
+	{% endif %}
 </header>
 
-<main role="main">
+<main role="main" class="container-fluid">
 	<a id="main-content" tabindex="-1"></a>
 	{# link is in html.html.twig #}
 
@@ -67,7 +97,7 @@
    %}
 
 
-	<div>
+	<div class="{{ b5_top_container }}">
 		{% if page.breadcrumb %}
 			{{ page.breadcrumb }}
 		{% endif %}
@@ -92,6 +122,8 @@
 
 {% if page.footer %}
 	<footer class="mt-auto {{ footer_classes }}">
-		{{ page.footer }}
+		<div class="{{ b5_top_container }}">
+			{{ page.footer }}
+		</div>
 	</footer>
 {% endif %}
