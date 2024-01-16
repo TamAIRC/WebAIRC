@@ -1,0 +1,27 @@
+.baner-3 {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  position: relative;
+  width: 100%;
+  margin-left: 1rem;
+  align-items: center;
+}
+
+.image-banner3 {
+  background: #DCF2F1;
+  box-shadow: 2px 2px 0px 2px #1E1E1E;
+  display: flex;
+  align-items: center;
+  padding: 48px;
+  gap: 22px;
+  width: 100%;
+}
+
+.image-3 {
+  width: 60%;
+}
+
+.card-body-bn3 {
+  text-align: center;
+}

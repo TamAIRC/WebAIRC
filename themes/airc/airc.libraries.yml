@@ -5,6 +5,8 @@ global-styling:
       css/globals.css: {}
       css/style.css: {}
       css/product.css: {}
+      css/out-esearch.css: {}
+      css/out-product.css: {}
   js:
     js/script.js: {}
   dependencies:
