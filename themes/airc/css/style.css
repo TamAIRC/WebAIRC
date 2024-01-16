@@ -33,7 +33,7 @@
 
 .navbar-menu-wrap {
   background-color: #365486;
-  border: 2px solid #000;
+  border: 2px solid #0F1035;
   border-radius: 12px;
   color: #ffffff;
 }
@@ -44,12 +44,13 @@
 
 .navbar-menu-wrap .menu--main ul>li .nav-link {
   padding: 38px 34px;
-  border-left: 2px solid #000;
+  border-left: 2px solid #0F1035;
+  color: #ffffff;
 }
 
 .navbar-menu-wrap .menu--main ul>li .nav-link.is-active {
   background-color: #DCF2F1;
-  color: #000;
+  color: #0F1035;
 }
 
 .region-nav-branding .navbar-brand {
@@ -60,7 +61,7 @@
 .region-nav-branding .site-logo {
   background-color: #DCF2F1;
   padding: 20px 24px;
-  border-right: 2px solid #000;
+  border-right: 2px solid #0F1035;
   border-top-left-radius: 12px;
   border-bottom-left-radius: 12px;
 }
@@ -82,7 +83,12 @@
   background-color: #dcf2f1;
   border-radius: 12px;
   overflow: hidden;
-  border: 2px solid #000;
+  border: 2px solid #0F1035;
+}
+
+.banner-home .box-banner .content-text {
+  line-height: 24px;
+  text-align: justify;
 }
 
 .banner-home .owl-carousel .owl-nav .owl-prev,
@@ -92,7 +98,7 @@
   position: absolute;
   top: 50%;
   background-color: #dcf2f1;
-  border: 2px solid #000;
+  border: 2px solid #0F1035;
   border-radius: 12px;
   display: flex;
   justify-content: center;
@@ -108,4 +114,69 @@
 .banner-home .owl-carousel .owl-nav .owl-next {
   transform: translate(50%, -50%);
   right: 0;
+}
+
+footer .airc-footer {
+  flex-direction: row;
+  background-color: #dcf2f1;
+  border: 2px solid #0F1035;
+  border-radius: 12px;
+  padding: 30px 80px;
+}
+
+.airc-log-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.box-icon {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #0F1035;
+  color: #0F1035;
+  background-color: #365486;
+  border-radius: 6px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.block-footer-info .list-info {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+}
+
+.block-footer-info .info-text {
+  font-weight: 500;
+}
+
+.block-footer-info .list-info .item-info {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-menu ul {
+  padding-left: 0;
+}
+
+.footer-menu ul>li {
+  margin-bottom: 10px;
+}
+
+.footer-menu a {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.menu-item-title {
+  margin-bottom: 20px;
 }

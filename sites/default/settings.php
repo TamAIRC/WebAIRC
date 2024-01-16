@@ -624,7 +624,7 @@ $settings['file_chmod_file'] = 0664;
  *
  * @see \Drupal\Component\FileSystem\FileSystem::getOsTemporaryDirectory()
  */
-$settings['file_temp_path'] = '/tmp';
+// $settings['file_temp_path'] = '/tmp';
 
 /**
  * Session write interval:
