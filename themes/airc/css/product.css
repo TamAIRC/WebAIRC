@@ -28,6 +28,7 @@
 .product__item__container {
   display: flex;
   padding: 3.125rem;
+  height: 32rem;
   flex-direction: column;
   align-items: flex-start;
   gap: 3.125rem;
