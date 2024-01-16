@@ -1,0 +1,60 @@
+.main__title {
+  color: #0f1035;
+  font-weight: 700;
+}
+.text-center{
+  margin: 1.5rem;
+}
+.text-onbox{
+  color: #FFFFFF;
+  padding-top: 9rem;
+  padding-left: 16px;
+  padding-bottom: 8px;
+}
+.activities-box{
+  display: flex;
+  justify-content: space-between;
+}
+
+.activities-img{
+  flex-direction: column;
+}
+.button3,
+.button-4 {
+  width: 38px;
+  height: 38px;
+  z-index: 1;
+}
+.btn-lr{
+  margin-right: 13px;
+}
+.baner-2{
+  background: rgba(54, 84, 134, 1);
+  border-radius: 20px;
+  border: 2px solid;
+  border-color: var(--grey-15);
+  box-shadow: 6px 6px 0px 2px #1e1e1e;
+}
+.img-baner2{
+  margin-bottom: -6rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  z-index: 1;
+  justify-content: space-evenly;
+}
+.img-baner2 img{
+  position: relative;
+    flex: 1;
+    flex-grow: 1;
+    height: 262px;
+    object-fit: cover;
+    padding: 17px;
+  width: 100%;
+  height: auto;
+
+}
