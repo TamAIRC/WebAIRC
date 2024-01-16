@@ -5,9 +5,16 @@ use Drupal\Core\Routing\RouteMatchInterface;
 function hello_module_theme($existing, $type, $theme, $path) {
   return [
     'wellcome_body' => [
-      'template' =>   'wellcome-body',
+      'template' => 'wellcome-body',
       'variables' => [
-        'body' => 'Default body text'],
-    ]
+        'body' => 'Default body text',
+      ],
+    ],
+    'detail' => [
+      'template' => 'detail-conten',
+      'variables' => [
+        'body' => 'Default body text',
+      ],
+    ],
   ];
 }
