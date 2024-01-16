@@ -4,6 +4,7 @@ global-styling:
     theme:
       css/globals.css: {}
       css/style.css: {}
+      css/product.css: {}
   js:
     js/script.js: {}
   dependencies:
