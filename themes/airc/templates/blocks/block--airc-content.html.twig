@@ -26,8 +26,8 @@
  * @see template_preprocess_block()
  */
 #}
-{% include "/themes/airc/templates/views/demo.html.twig" %}
-{# {%
+{# {% include "/themes/airc/templates/views/demo.html.twig" %} #}
+{%
   set classes = [
     'block',
     'block-' ~ configuration.provider|clean_class,
@@ -43,4 +43,4 @@
 	{% block content %}
 		{{ content }}
 	{% endblock %}
-</div> #}
+</div>
