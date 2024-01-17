@@ -1,0 +1,12 @@
+global-styling:
+  version: 1.x
+  css:
+    theme:
+      css/globals.css: {}
+      css/style.css: {}
+      css/detail.css: {}
+      css/styleguide.css.css: {}
+  js:
+    js/script.js: {}
+  dependencies:
+    - core/jquery

@@ -1,0 +1,15 @@
+hello_module.wellcome:
+  path: '/view'
+  defaults:
+    _controller: '\Drupal\hello_module\Controller\WellcomeController::wellcome'
+    _title: 'Trang chủ'
+  requirements:
+    _permission: 'access content'
+
+hello_module.detail:
+  path: '/detail'
+  defaults:
+    _controller: '\Drupal\hello_module\Controller\WellcomeController::detail'
+    _title: 'Chi tiết'
+  requirements:
+    _permission: 'access content'

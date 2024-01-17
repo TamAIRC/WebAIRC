@@ -1,0 +1,24 @@
+name: 'Airc Theme'
+description: 'Airc Theme fist'
+type: theme
+base theme: bootstrap5
+core_version_requirement: ^8 || ^9 || ^10
+package: Other
+version: '1.0'
+
+libraries:
+  - airc/global-styling
+  - bootstrap5/bootstrap5-js-latest
+  - bootstrap5/global-styling
+
+regions:
+  header: Header
+  nav_additional: 'Additional navigation region (eg search form, social icons, etc)'
+  nav_branding: 'Navigation branding region'
+  nav_main: 'Main navigation region'
+  breadcrumb: Breadcrumbs
+  content: 'Main content'
+  sidebar: Sidebar
+  sidebar_first: 'Sidebar first'
+  sidebar_second: 'Sidebar second'
+  footer: Footer

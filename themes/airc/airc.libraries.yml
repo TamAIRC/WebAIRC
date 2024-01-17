@@ -1,0 +1,13 @@
+global-styling:
+  version: 1.x
+  css:
+    theme:
+      css/globals.css: {}
+      css/style.css: {}
+      css/product.css: {}
+      css/out-esearch.css: {}
+      css/collaboration.css: {}
+  js:
+    js/script.js: {}
+  dependencies:
+    - core/jquery
