@@ -1,2 +1,43 @@
 <?php
-?>
+
+/**
+ * Implements hook_help().
+ */
+function hook_help($route_name, $route_match)
+{
+  switch ($route_name) {
+    case 'help.page.custom_module':
+      return '<p>' . t('A custom module for Drupal 8.') . '</p>';
+  }
+}
+
+/**
+ * Implements hook_menu().
+ */
+function airc_module_menu()
+{
+  $items = array();
+
+  $items['airc_module/hello'] = array(
+    'title' => 'Hello, World!',
+    'description' => 'Displays a hello message.',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('airc_module_hello_form'),
+    'access arguments' => array('access content'),
+    'type' => MENU_NORMAL_ITEM,
+  );
+
+  return $items;
+}
+
+/**
+ * Form constructor for the 'hello' form.
+ */
+function custom_module_hello_form($form, &$form_state)
+{
+  $form['message'] = array(
+    '#markup' => '<p>' . t('Hello, World! This is a custom module.') . '</p>',
+  );
+
+  return $form;
+}

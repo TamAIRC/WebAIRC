@@ -1,0 +1,8 @@
+airc_module.content:
+  path: '/content'
+  defaults:
+    _controller: '\Drupal\airc_module\Controller\AircController::content'
+    _title: 'Content AIRC'
+  requirements:
+    _permission: 'access content'
+
