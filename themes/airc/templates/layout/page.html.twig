@@ -56,24 +56,24 @@ set footer_classes = ' ' ~
   (b5_footer_schema != 'none' ? (b5_footer_schema == 'dark' ? ' text-light' : ' text-dark' ) : ' ') ~
   (b5_footer_bg_schema != 'none' ? " bg-#{b5_footer_bg_schema}" : ' ')
 %}
-<header id="header" class="header container-fluid" role="banner">
+<header id="header" class="header {{ logged_in ? 'header-logged':'' }}" role="banner">
 	{{ page.header}}
 	{% if  page.nav_additional %}
 		<div class="navbar-additional-wrap">
-			<nav class="{{ nav_classes }} navbar-additional">
+			<nav class="{{ nav_classes }} navbar-additional px-3">
 				{{ page.nav_additional }}
 			</nav>
 		</div>
 	{% endif %}
 	{% if page.nav_branding or page.nav_main %}
-		<div class="{{ b5_top_container }} navbar-menu-wrap">
+		<div class="{{ b5_top_container }} navbar-menu-wrap container">
 			<nav class="{{ nav_classes }}">
 				{{ page.nav_branding }}
 				{% if page.nav_main %}
 					<button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
 					</button>
-					<div class="collapse navbar-collapse justify-content-md-end" id="navbarMain">
+					<div class="collapse navbar-collapse" id="navbarMain">
 						{{ page.nav_main }}
 					</div>
 				{% endif %}
@@ -111,6 +111,7 @@ set footer_classes = ' ' ~
 			{% endif %}
 			<div class="layout-content order-1 order-lg-2 {{ content_classes }}">
 				{{ page.content }}
+				{% include "/themes/airc/templates/views/demo.html.twig" %}
 			</div>
 			{% if page.sidebar_second %}
 				<div class="layout-sidebar-second order-3 {{ sidebar_second_classes }}">
@@ -129,3 +130,21 @@ set footer_classes = ' ' ~
 		</div>
 	</footer>
 {% endif %}
+<div class="copyright-airc container-fluid">
+	<p>Copyright ©2024
+		<strong>Bản quyền
+			<a href="/" title="Trung tâm AIRC">Trung tâm AIRC</a>
+			(<a href="/" title="AIRC">AIRC</a>) –
+			<a href="https://iti.vnu.edu.vn/" title="Viện Công nghệ thông tin">Viện Công nghệ thông tin</a>
+			<a href="https://vnu.edu.vn/" title="Đại học Quốc gia Hà Nội">Đại học Quốc gia Hà Nội</a>
+		</strong>
+	</p>
+	<div class="footer-social social-desk">
+		<ul>
+			<li><a href="#" target="_blank" class="rounded-icon social-twitter"><i class="fa-brands fa-twitter"></i></a></li>
+			<li><a href="#" target="_blank" class="rounded-icon social-facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+			<li><a href="#" target="_blank" class="rounded-icon social-youtube"><i class="fa-brands fa-youtube"></i></a></li>
+		</ul>
+		<!-- footer-contact -->
+	</div>
+</div>
